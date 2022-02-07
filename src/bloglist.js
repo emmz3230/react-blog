@@ -12,7 +12,7 @@ const blogList = ({blogs,title}) => {
                     <p>written by {blog.author}</p>                
                  </link> 
             </div>                 
-            )s)}
+            ))}
         </div>
     )
 }
