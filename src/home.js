@@ -5,9 +5,10 @@ import BlogList from "./bloglist";
 
 const Home = () =>{
     // initialize blog data using usestate
-    let [blogData, setBlogData] = useState('');
+    let [blogData, setBlogData] = useState([]);
     const [isPending,setIsPending] = useState(true);
     const [error,setError] = useState(null);
+    const [Loading,setLoading] = useState(null);
 
     // useEffect to change blogData
     useEffect(() => {
